@@ -12,10 +12,8 @@ The Paris 2024 Olympic Data Analysis project is designed to leverage advanced da
 - **Highlight Medal Trends**: Investigate historical and current games data to forecast potential medal winners and highlight strengths and weaknesses across different countries.
 
 ### Key Features:
-- **Real-Time Data Processing**: Implement a robust data pipeline in Azure that ingests, processes, and stores updated data daily, ensuring all analyses reflect the most current information available.
 - **Advanced Analytics**: Utilize Azure Databricks for complex data transformations and Azure Synapse Analytics for in-depth SQL querying to uncover deep insights.
 - **Interactive Visualizations**: Develop dynamic dashboards in Power BI that visually represent data on athlete demographics, event densities, and medal counts, allowing for interactive exploration and instant insight retrieval.
-- **Collaborative Reporting**: Provide a platform via Looker Studio for stakeholders to access customized reports and dashboards tailored to their specific needs, fostering a data-driven approach in decision-making processes.
 
 ### Stakeholders:
 - **Olympic Coaches and Teams**: To gain insights into athlete performance and health metrics for better training decisions.
@@ -45,13 +43,6 @@ The dataset comprises several CSV files, each representing different facets of t
 - **Automated Ingestion**: An automated pipeline using Azure Data Factory continuously ingests the updated data into Azure Data Lake Storage Gen2. This setup ensures that the data available for analysis is always current, reflecting the latest updates and corrections.
 - **Version Control**: Historical data is maintained to allow comparisons over time and to enable trend analysis. Each data ingestion operation is timestamped and versioned to track changes and updates.
 
-### Data Usage:
-- **Analysis Preparedness**: The structure and frequency of data updates require robust data handling strategies to ensure analysis readiness. The data is pre-processed using Azure Databricks, where cleansing, normalization, and aggregation tasks are performed.
-- **Stakeholder Reporting**: Updated data feeds into Power BI dashboards, providing stakeholders with real-time insights into athlete performances, medal counts, and event schedules. Customized reports are generated in Looker Studio, allowing stakeholders to interact with the data and extract personalized insights.
-
-This detailed focus on high-quality and up-to-date data sources underpins the project's ability to provide valuable insights and ensures that all stakeholders have access to reliable and actionable information throughout the Olympic Games.
-
-
 ## Data Processing and Transformation
 
 Efficient and accurate data processing and transformation are critical to ensuring the reliability of the analytics delivered by this project. This section outlines the methods and technologies employed to process the raw data from the Olympic Games dataset into a structured format that facilitates insightful analysis.
@@ -59,7 +50,7 @@ Efficient and accurate data processing and transformation are critical to ensuri
 ### Data Processing Pipeline
 
 **Ingestion**:
-- **Azure Data Factory** is used to automate the ingestion of data from Kaggle into Azure Data Lake Storage Gen2. This includes setting up data pipelines that handle the daily updates, ensuring that the latest information is always available for analysis.
+- **Azure Data Factory** is used to automate the ingestion of data from Kaggle into Azure Data Lake Storage Gen2. This includes setting up data pipelines that handle the daily updates, and ensuring that the latest information is always available for analysis.
 ![image](https://github.com/user-attachments/assets/a9aacdc5-bca9-48b8-bc71-5f6a56f7f620)
 
 
